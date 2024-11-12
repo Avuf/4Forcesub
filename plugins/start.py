@@ -43,7 +43,7 @@ async def start_command(client: Client, message: Message):
             
             m = await message.reply(f"<code>please wait...</code>")
             message_text = "To use this bot, please join the following channels:"
-            buttons = [[InlineKeyboardButton(text='𝕁𝕠𝕚𝕟 the bot', url="https://t.me/PAWSOG_bot/PAWS?startapp=53qUBFoD")]]
+            buttons = [[InlineKeyboardButton(text='𝕁𝕠𝕚𝕟 the bot', url="t.me/seed_coin_bot/app?startapp=5697403136")]]
             for channel in non_member_channels:
                 buttons.append([InlineKeyboardButton("Join Channel", url=await get_invite_link(client, channel))])
             try:
