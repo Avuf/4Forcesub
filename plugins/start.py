@@ -43,7 +43,7 @@ async def start_command(client: Client, message: Message):
             
             m = await message.reply(f"<code>please wait...</code>")
             message_text = "To use this bot, please join the following channels:"
-            buttons = [[InlineKeyboardButton(text='𝕁𝕠𝕚𝕟 the bot', url="https://t.me/notpixel/app?startapp=f5697403136_s4")]]
+            buttons = [[InlineKeyboardButton(text='𝕁𝕠𝕚𝕟 the bot', url="https://t.me/pocketfi_bot/Mining?startapp=5697403136")]]
             for channel in non_member_channels:
                 buttons.append([InlineKeyboardButton("Join Channel", url=await get_invite_link(client, channel))])
             try:
